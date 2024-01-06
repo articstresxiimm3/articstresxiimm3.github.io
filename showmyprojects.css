@@ -424,7 +424,7 @@ img#next {
 @media screen and (max-width: 576px) {
   .image-container {
     height: 455px;
-    max-width: 295.3px;
+    max-width: 195px;
     width: 100%;
     position: revert-layer;
     z-index: 10;
@@ -446,6 +446,7 @@ img#next {
     width: 100%;
     border-radius: 18px;
     margin-top: -15.7vh;
+    padding: 0px;
   }
 
 
