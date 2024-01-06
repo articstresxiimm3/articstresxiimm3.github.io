@@ -423,7 +423,7 @@ img#next {
 /* Di Mobile */
 @media screen and (max-width: 576px) {
   .image-container {
-    height: 580px;
+    height: 455px;
     max-width: 295.3px;
     width: 100%;
     position: revert-layer;
@@ -445,7 +445,7 @@ img#next {
     height: 100%;
     width: 100%;
     border-radius: 18px;
-    margin-top: -16.6vh;
+    margin-top: -12.6vh;
   }
 
 
