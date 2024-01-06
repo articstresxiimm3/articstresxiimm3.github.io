@@ -1,0 +1,454 @@
+/* * {
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  margin: 0;
+  background: rgba(62, 62, 255, 0.999);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  background: url('Pertunjukan Wayang update frame 2.png');
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 20px 5px;
+  color: $arrow;
+  font-size: 2rem;
+}
+
+button span {
+  position: relative;
+  display: inline-block;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+} */
+
+/* .previous:hover span {
+  transform: translateX(-10px) scale(1.2);
+}
+
+.next:hover span {
+  transform: translateX(10px) scale(1.2);
+} */
+
+/* .slider-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-nav li {
+  display: flex;
+  flex: 2;
+  text-align: center;
+}
+
+.slider img {
+  max-width: 100%;
+  display: none;
+  box-shadow: 10px 10px 20px 0 rgba(94, 47, 59, 0.2);
+}
+
+img.active {
+  display: block;
+  animation: fadeImg 0.8s;
+}
+
+.slider-nav .arrow {
+  flex: 0 0 15%;
+}
+
+.slider-nav a {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-nav span {
+  display: block;
+  width: 100%;
+}
+
+@keyframes fadeImg {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body.students {
+  margin: 0;
+  padding: 0;
+}
+
+section.students {
+  height: 30rem;
+  width: 100%;
+}
+
+.studentsmm3 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.mm3 {
+  box-sizing: border-box;
+}
+
+img.muridmm3 {
+  border-radius: 150px;
+  margin-top: 7rem;
+}
+
+h1.namestudentsmm3 {
+  color: white;
+  font-family: Gotham;
+}
+
+a.projectmm3 {
+  background-color: #fff;
+  color: #0043ff;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 150px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+a.projectmm3:hover {
+  background-color: #a7a7a7;
+  color: #e1e9ff;
+  transition: all 0.2s;
+}
+
+a.arrowdownproject {
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+  line-height: 2em;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+section.projectsstudentsmm3 {
+  height: 60rem;
+  width: 100%;
+  margin-top: 12vmax;
+}
+
+.studentsmm3projects {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+h1.projectkelassmm3 {
+  color: #fff;
+  font-family: Gotham;
+  font-size: 5em;
+  margin-top: 15vh;
+  text-align: center;
+}
+
+video {
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 90rem;
+  height: 90rem;
+}
+
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #000;
+  z-index: 9999;
+  transition: all 1s;
+}
+
+#splashVideo {
+  display: block;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0015ff;
+}
+
+/* Awal Preloader */
+
+video {
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 90rem;
+  height: 90rem;
+}
+
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #000;
+  z-index: 9999;
+  transition: all 2s;
+}
+
+#splashVideo {
+  display: block;
+}
+
+/* .spinner-wrapper {
+  background: url('THUMBNAIL1.jpg');
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.spinner-border {
+  height: 10rem;
+  width: 10rem;
+  font-size: -webkit-xxx-large;
+} */
+/* Akhir Preloader */
+
+/* Home */
+section.home {
+  width: 100%;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.isihome {
+  margin-top: 20vh;
+}
+
+.home img.murid {
+  border-radius: 150%;
+  height: 250px;
+  width: 250px;
+  margin: auto;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2vmax;
+  font-family: Gotham;
+  padding-top: 15px;
+}
+
+a {
+  background-color: #fff;
+  border: none;
+  color: #0015ff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: Gotham;
+  border-radius: 150px;
+  margin-top: 3vmax;
+}
+
+a:hover {
+  background-color: #eaeaeaa7;
+  color: #0015ff;
+}
+/* Last Home */
+
+.wrapper {
+  display: flex;
+  max-width: 650px;
+  width: 100%;
+  height: 400px;
+  background: url('Pertunjukan Wayang update frame 2.png');
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  position: relative;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  background-size: contain;
+  margin: auto;
+  margin-top: 10vw;
+}
+.wrapper img.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 36px;
+  width: 36px;
+  background-color: #343f4f;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s linear;
+  z-index: 100;
+  cursor: pointer;
+}
+img.button:active {
+  transform: scale(0.94) translateY(-50%);
+}
+img#prev {
+  left: 25px;
+}
+img#next {
+  right: 25px;
+}
+.image-container {
+  height: 495px;
+  max-width: 409px;
+  width: 100%;
+  position: revert-layer;
+  z-index: 10;
+  overflow: hidden;
+  margin: auto;
+  display: inline-grid;
+}
+.image-container .carousel {
+  display: flex;
+  height: 100%;
+  margin: auto;
+  /* padding: -69px; */
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+.carousel img {
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+  margin-top: -5vh;
+  padding: 38px;
+  /* border: 10px solid #fff; */
+  object-fit: cover;
+  /* margin: auto; */
+  /* position: relative; */
+  /* z-index: 5; */
+  object-fit: contain;
+  /* display: block; */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Di Mobile */
+@media screen and (max-width: 576px) {
+  .image-container {
+    height: 580px;
+    max-width: 295.3px;
+    width: 100%;
+    position: revert-layer;
+    z-index: 10;
+    overflow: hidden;
+    margin: auto;
+    display: inline-grid;
+  }
+
+  img#next {
+    right: 17px;
+  }
+
+  .wrapper img.button {
+    top: 33%;
+  }
+
+  .carousel img {
+    height: 100%;
+    width: 100%;
+    border-radius: 18px;
+    margin-top: -20.8vh;
+  }
+
+  .isihome {
+    margin-top: 15vh;
+  }
+}

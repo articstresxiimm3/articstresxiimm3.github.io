@@ -1,0 +1,485 @@
+body {
+  background-color: rgb(0 67 255);
+}
+
+/* Awal Preloader */
+
+video {
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 90rem;
+  height: 90rem;
+}
+
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #000;
+  z-index: 9999;
+  transition: all 2s;
+}
+
+#splashVideo {
+  display: block;
+}
+
+/* .spinner-wrapper {
+  background: url('THUMBNAIL1.jpg');
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.spinner-border {
+  height: 10rem;
+  width: 10rem;
+  font-size: -webkit-xxx-large;
+} */
+/* Akhir Preloader */
+
+/* Awal Jumbotron */
+.jumbotron {
+  padding-top: 0.2rem;
+  background-image: url('analog1.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+@font-face {
+  font-family: Master;
+  src: url('Master.otf');
+}
+
+@font-face {
+  font-family: Gotham Bold;
+  src: url('Gotham Bold.otf');
+}
+
+svg {
+  margin-bottom: -0.2rem;
+}
+
+h1.jmbtrn {
+  font-family: master;
+  font-size: 8.5rem;
+  padding-top: 7rem;
+  color: rgb(208, 255, 0);
+}
+
+p.lead {
+  color: rgb(208, 255, 0);
+}
+
+section#about p {
+  color: rgb(208, 255, 0);
+}
+
+h2.mt-4 {
+  margin-top: 3.5rem !important;
+}
+
+h3 {
+  margin-top: -30px;
+}
+
+/* Awal Nav */
+img.logomm3 {
+  height: 4.5rem;
+  width: 4.5rem;
+  margin-right: 1rem;
+}
+
+nav {
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0%;
+  background-color: rgba(0, 68, 255, 0.738);
+  border-bottom-left-radius: 50px;
+  box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 17%);
+  z-index: 1;
+  backdrop-filter: blur(120px);
+}
+
+/* Hamburger menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  top: -4px;
+  left: 341px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+  align-content: flex-end;
+  justify-content: flex-end;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(208 255 0);
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: rgb(208 255 0);
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: rgb(208 255 0);
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+label.logo a {
+  color: rgb(208, 255, 0);
+  font-size: 25px;
+  line-height: 80px;
+  padding: 50px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding-right: 20px;
+  position: relative;
+  text-decoration: none;
+}
+
+label.logo a:hover {
+  color: rgba(248, 255, 215, 0.917);
+  transition: 0.5s;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+  background: rgba(000, 000, 000, 000);
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  align-items: center;
+}
+
+li a {
+  padding-right: 50px;
+  font-weight: 100px;
+  text-decoration: none;
+  list-style-type: none;
+  color: rgb(208, 255, 0);
+  font-weight: bold;
+}
+
+li a:hover {
+  color: rgba(248, 255, 215, 0.917);
+  transition: 0.5s;
+}
+/* Akhir Nav */
+
+/* Profile */
+
+#profile {
+  background-color: rgb(208, 255, 0);
+}
+
+#profile p {
+  padding-top: 8px;
+  font-family: inherit;
+  line-height: 20px;
+}
+
+mark {
+  background-color: #0043ff;
+  color: rgb(208, 255, 0);
+  border-radius: 10px;
+}
+
+h4 {
+  color: rgb(208, 255, 0);
+  font-size: 20px;
+  margin: auto;
+  margin-top: -3rem;
+}
+
+section#profile h2 {
+  color: rgb(0 67 255);
+}
+
+.wrapper {
+  height: 360px;
+  width: 260px;
+  margin: auto;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.wrapper .card {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  transform: translateY(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.wrapper:hover > .front-face {
+  transform: rotateY(-180deg);
+}
+.wrapper .card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.wrapper .back-face {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  transform: rotateY(180deg);
+}
+.wrapper:hover > .back-face {
+  transform: rotateY(0deg);
+}
+.wrapper .back-face img {
+  height: 150px;
+  width: 150px;
+  margin-top: 4.5rem;
+  border-radius: 50%;
+}
+.wrapper .back-face .info {
+  text-align: center;
+}
+.back-face .info .title {
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 9px;
+  font-weight: 500;
+}
+.back-face ul {
+  display: flex;
+  padding-left: 0rem;
+  margin-bottom: -4px;
+}
+
+.back-face ul a {
+  display: block;
+  height: 40px;
+  width: 35px;
+  color: #000;
+  text-align: center;
+  margin: 0 5px;
+  line-height: 0px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.back-face ul a:hover {
+  color: rgb(0 67 255 / 55%);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  border-radius: 50px;
+  margin-bottom: 70px;
+}
+/* Akhir Profile */
+
+/* Awal Footer */
+footer {
+  background-color: black;
+  color: white;
+  height: 136px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+#crp {
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.social {
+  justify-content: center;
+  letter-spacing: 30px;
+  margin-left: 31px;
+}
+
+button.btn-kirim {
+  background-color: rgb(208, 255, 0);
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+button.btn-kirim:hover {
+  background-color: rgba(208, 255, 0, 0.695);
+}
+
+button.btn-loading {
+  background-color: rgb(208, 255, 0);
+  border-radius: 250px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+button.btn-loading:hover {
+  background-color: rgba(208, 255, 0, 0.695);
+}
+
+.alert {
+  width: 55vmax;
+  color: #0043ff;
+  background: #d0ff00;
+}
+
+/* Akhir Footer */
+
+/* Di Mobile */
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+    line-height: 80px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    position: fixed;
+    top: 31;
+    padding-left: 347px;
+    margin-top: 30px;
+  }
+
+  nav {
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    backdrop-filter: blur(120px);
+  }
+
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    align-items: center;
+    padding-left: 50px;
+    line-height: 120px;
+  }
+
+  label.logo {
+    color: rgb(208 255 0);
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-right: 20px;
+    position: relative;
+    text-decoration: none;
+  }
+
+  nav ul {
+    position: fixed;
+    right: -7%;
+    top: 0;
+    height: 100vh;
+    width: 80%;
+    transform: translate(100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+    background-color: rgb(0 67 255 / 55%);
+    transition: all 1s;
+    opacity: 0;
+    font-size: 30px;
+    letter-spacing: 3;
+    padding-top: 90px;
+    text-align: center;
+  }
+
+  li a {
+    padding-right: 50px;
+    font-weight: 100px;
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(208 255 0);
+    font-weight: bold;
+  }
+
+  li a:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  h1.jmbtrn {
+    font-size: 3.5rem;
+    margin-top: 5rem;
+  }
+
+  svg {
+    margin-bottom: -0.2rem;
+  }
+}
