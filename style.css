@@ -395,6 +395,12 @@ button.btn-loading:hover {
 
 /* Di Mobile */
 @media screen and (max-width: 576px) {
+
+/*   Video */
+video {
+  width: 25rem;
+}
+  
   .menu-toggle {
     display: flex;
     line-height: 80px;
