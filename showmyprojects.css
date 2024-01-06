@@ -445,7 +445,11 @@ img#next {
     height: 100%;
     width: 100%;
     border-radius: 18px;
-    margin-top: -20.8vh;
+    margin-top: -16.6vh;
+  }
+
+  section.home {
+    height: 90vh;
   }
 
   .isihome {
